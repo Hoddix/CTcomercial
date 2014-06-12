@@ -1,0 +1,399 @@
+/*
+CTC 1.0 - Comercial Tablet Control
+
+Creado por Javier Cabello Ortega
+http://www.javiercabello.com
+contactar@javiercabello.com
+
+Licencia de Creative Commons
+CTC 1.0 - Comercial Tablet Control by Javier cabello Ortega 
+is licensed under a Creative Commons Reconocimiento-NoComercial-SinObraDerivada 4.0 Internacional License.
+Creado a partir de la obra en http://javiercabello.com.
+Puede hallar permisos más allá de los concedidos con esta licencia en http://javiercabello.com
+*/
+/*Hecho*/
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ECF0F1;
+}
+/**/
+ul{
+    list-style: none;
+}
+/**/
+textarea{
+    resize: none;
+}
+/**/
+p{
+    color: #FFFFFF;}
+/**/
+small{
+    color: #FFFFFF;
+    text-align: justify;
+    font-size: 10px;
+}
+/**/
+section{
+    position: relative;
+    float:none;
+}
+.login-form{
+    
+}
+small.text{
+    color: #7F8C8D;
+}
+.outSession{
+    text-align: center;
+    color: #E74C3C;
+    font-size: 15px;
+}
+/*Hecho*/
+.btn-primary{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/**/
+#titulo_pagina{
+    position: relative;
+    text-align: center;
+    float:none;
+}
+/**/
+#no_top{
+    margin-top: 2px !important;
+}
+/**/
+.toltip-cont{
+    position: relative;
+    top: -110px;
+    left: 5%;
+}
+/**/
+#errorR{
+    background-color: #E74C3C;
+    border-radius: 10px;
+    padding: 30px;
+    color: #FFFFFF;
+    display: none;
+    position: relative;
+}
+/**/
+#errorR{
+    /* margin-bottom: 50px; */
+}
+/**/
+#errorV{
+    background-color: #E74C3C;
+    border-radius: 10px;
+    padding: 30px;
+    color: #FFFFFF;
+    display: none;
+    position: relative;
+}
+/**/
+#errorV{
+    /* margin-bottom: 50px; */
+}
+/**/
+#cerrarR{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    border-radius: 55px;
+    width: 16px;
+    height: 16px;
+    color: #E74C3C;
+    cursor: pointer;
+}
+/**/
+#cerrarR h6{
+    position: absolute;
+    top: -22px;
+    right: 2px;
+} 
+/*VERDE*/
+#cerrarV{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    border-radius: 55px;
+    width: 16px;
+    height: 16px;
+    color: #1abc9c;
+    cursor: pointer;
+}
+/**/
+#cerrarV h6{
+    position: absolute;
+    top: -22px;
+    right: 2px;
+}
+/**/
+.over_name{
+    color:#1abc9c;
+}
+/**/
+.gifcarga{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.72);
+    z-index: 9999999999;    
+    margin: 0 auto;       
+}
+/**/
+.gifcarga #texto{
+    position: relative;
+    top: 35%;
+    text-align: center;
+} 
+.gifcarga #texto p{
+    color: black;
+}  
+/**/
+.gifcarga img{
+    position: relative;
+    left: 50%;
+    margin-left: -16px;
+    margin-top: 25%;     
+}  
+/**/
+.gifcarga-p{
+    position: fixed;
+    top: 30%;
+    left: -100px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.72);
+    z-index: 9999999999;
+    margin: 0 50%;
+    border-radius: 30px;
+}
+/**/
+.gifcarga-p #texto{
+    position: relative;
+    left: 0px;
+    top: 20px;
+    width: 200px;
+    text-align: center; 
+}  
+.gifcarga-p #texto p{
+    color:black;
+}
+/**/    
+.gifcarga-p img{
+    position: relative;
+    left: 50%;
+    margin-left: -16px;
+    top: 40px;   
+}  
+/**/
+.zero{
+    margin: 0;
+    padding: 0;
+    overflow-y:none;            
+}
+/**/
+#lat_nav{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #34495E;
+    padding-top: 61px;
+    z-index: 1;
+}
+/**/
+ul.ul_lat_nav{
+    margin: 0;
+    padding: 0;
+}
+/**/
+ul.ul_lat_nav li{
+    border-bottom: 1px solid black;
+    display: block;
+    height: 100%;
+    position: relative;
+}
+/**/
+ul.ul_lat_nav li a.btn_li{
+    display: block;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+    font-weight: 300;
+    padding-left: 20px;
+}
+/**/
+ul.ul_lat_nav li a.btn_li:hover {
+    background: #1ABC9C;
+    color: white;
+}
+/**/
+ul.sub_ul_lat_nav{
+    display: none;
+    background-color: white;
+    color: #34495E;
+    padding-left: 20px;
+    margin-left: 0;
+    font-weight: 300;
+    line-height: 40px;
+    list-style: none;
+}
+/**/
+ul.sub_ul_lat_nav li{
+    border: none;
+}
+/**/
+.seleccion{
+    display: none;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 20px;
+    right: -1px;
+    background-image: url(../img/seleccion.png);
+}   
+/**/
+#conten{
+    background-color: #ECF0F1;
+    height: 100%;
+    margin-top: 80px;
+}
+/**/
+#barra_sup{
+    background-color: #34495E;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 2;
+}
+/**/
+#barra_sup nav{
+    background-color: #34495E;
+    margin-bottom: 0;
+}
+/**/
+#primero{
+    margin-top: 100px;
+}
+/**/
+.cntrl-pnl{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/**/
+#resume_general{
+    position: relative;
+    float:none;
+}
+/**/
+#resumen{
+    background-color: #1abc9c;
+    border-radius: 10px;
+    padding: 30px;
+    color: #FFFFFF;
+    position: relative;
+} 
+/**/
+p.resumen{
+    color: #34495e;
+    font-weight: 500;
+}
+/**/
+#resumenR{
+    background-color: #E74C3C;
+    border-radius: 10px;
+    padding: 30px;
+    color: #FFFFFF;
+    position: relative;
+}
+/**/
+#contenido{
+    position: relative;
+    float:none;
+}
+/**/
+.badge{              
+    background-color: red;
+}
+/**/
+.pagina{
+    font-size: 13px;
+    float: left;
+    padding-top: 3px;
+    min-width: 160px;
+}
+/**/
+.sel{
+   display: inline !important;                    
+}
+/**/
+.nosel{
+   display: none !important; 
+}
+/**/
+.pager li > a, .pager li > span{
+    border-left: none;
+}
+/**/
+.pager li:first-child > a, .pager li:first-child > span{
+    border-right: 2px solid #2c3e50;
+}
+/**/
+.pager li:last-child > a, .pager li:last-child > span{
+    border-left: 2px solid #2c3e50;   
+}
+/**/
+#menu-men, #pagination{
+    text-align: center;
+}
+/**/
+.pagination{
+    min-width: 295px;
+}
+/**/
+.asunto{
+    cursor: pointer;
+}
+/**/
+.cont-message{
+    display: none;
+}
+/**/
+.estilomensajes{
+    font-size: 12px;
+    font-weight: bold;       
+}
+/**/
+#nuevo_men{
+    text-align: center;
+    margin-bottom: 20px;
+}
+/**/
+#contenedor{
+    height: 1000px;
+}
+/**/
+#header{
+    position: relative;
+}
+/**/
+#seccion{
+    position: relative;
+}
+/**/
+#footer{
+    position: relative;
+}

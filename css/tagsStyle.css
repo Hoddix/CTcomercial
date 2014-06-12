@@ -1,0 +1,97 @@
+
+html { height: 100%; }
+.productos  { 
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #313131;
+  font-size: 62.5%;  
+}
+
+/** typography **/
+.productos h1 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 2.5em;
+  line-height: 1.5em;
+  letter-spacing: -0.05em;
+  margin-bottom: 20px;
+  padding: .1em 0;
+  color: #444;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+.productos h1:before,
+.productos h1:after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 1px;
+  vertical-align: middle;
+  background: #f0f0f0;
+}
+.productos h1:before {    
+  left: -.5em;
+  margin: 0 0 0 -50%;
+}
+.productos h1:after {    
+  left: .5em;
+  margin: 0 -50% 0 0;
+}
+.productos h1 > span {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+}
+
+.productos p {
+  display: block;
+  font-size: 1.35em;
+  line-height: 1.5em;
+  margin-bottom: 22px;
+}
+
+.productos a { color: #5a9352; text-decoration: none; }
+.productos a:hover { text-decoration: underline; }
+
+.flatbtn {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  color: #f3faef;
+  text-decoration: none;
+  background-color: #6bb642;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 12px 22px 12px 22px;
+  line-height: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 0 rgba(15, 15, 15, 0.3);
+  -moz-box-shadow: 0 1px 0 rgba(15, 15, 15, 0.3);
+  box-shadow: 0 1px 0 rgba(15, 15, 15, 0.3);
+}
+.flatbtn:hover {
+  color: #fff;
+  background-color: #73c437;
+}
+.flatbtn:active {
+  -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow:inset 0 1px 5px rgba(0, 0, 0, 0.1);
+  box-shadow:inset 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.autocomplete-suggestions { border: 2px solid #1abc9c; background: #fff; cursor: default; overflow: auto; border-radius: 5px; margin-top: 5px;}
+.autocomplete-suggestion { padding: 10px 5px;   font-size: 18px; white-space: nowrap; overflow: hidden; font-family: "Lato", Helvetica, Arial, sans-serif; color: #34495e;}
+.autocomplete-selected { background: #ECF0F1; }
+.autocomplete-suggestions strong { font-weight: bold; color: #1abc9c; }
